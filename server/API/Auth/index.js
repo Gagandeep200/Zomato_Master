@@ -46,11 +46,9 @@ Method        POST
 
 Router.post("/signin", async(req,res) => {
     try {
-
-
-      const newUser = await UserModel.findByEmailAndPassword(
-        req.body.credentials
-      );
+        const doesUserExist = await UserModel.findByEmailAndPhone(
+          req.body.credentials
+        );
 
          //JWT Auth Token
          const token = newUser.generateJwtToken();

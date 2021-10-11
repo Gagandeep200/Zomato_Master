@@ -5,6 +5,10 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 
+//config
+import passport from "passport";
+import routeConfig from "./config/route.config";
+
 //API
 import Auth from "./API/Auth";
 import Restaurant from "./API/Restaurant"
@@ -27,6 +31,9 @@ zomato.use(express.json());
 zomato.use(express.urlencoded({extended: false}));
 zomato.use(helmet());
 zomato.use(cors());
+
+//Configs
+routeConfig(passport);
 
 //For application routes
 //localhost:4000/auth/signup

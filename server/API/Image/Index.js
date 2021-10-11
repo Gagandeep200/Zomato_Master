@@ -1,5 +1,5 @@
 //Libraries
-//require('dotenv').config()
+require('dotenv').config()
 import express from "express";
 import AWS from "aws-sdk";
 import multer from "multer";

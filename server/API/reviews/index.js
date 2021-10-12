@@ -1,4 +1,5 @@
 // Libraries
+import passport from "passport";
 import express from "express";
 
 // Database modal
@@ -31,7 +32,7 @@ BODY      review object
 Access    Public
 Method    POST  
 */
-Router.post("/new", async (req, res) => {
+Router.post("/new", passport.authenticate("jwt"), async (req, res) => {
   try {
     const { _id } = req.session.passport.user._doc;
     const { reviewData } = req.body;
@@ -46,7 +47,7 @@ Router.post("/new", async (req, res) => {
 
 /*
 Route     /delete
-Des       Add new food review/rating
+Des       Delete a review
 Params    _id
 BODY      none
 Access    Public

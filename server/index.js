@@ -15,7 +15,7 @@ import Auth from "./API/Auth";
 import Restaurant from "./API/Restaurant"
 import Food from "./API/Food"
 import Menu from "./API/Menu"
-import Reviews from "./API/reviews"
+import Reviews from "./API/Reviews"
 import Image from "./API/Image"
 import orders from "./API/orders/orders"
 

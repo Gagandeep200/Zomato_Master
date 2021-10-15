@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 
 // components
-import NutritionCarousalCard from "./NutritionCarousalCard";
+import NutritionCarousalCard from "./NutritionHeroCarousalCard";
 import { NextArrow, PrevArrow } from "../CarousalArrow";
 const NutritionCarousal = () => {
   const [heroBanners, setHeroBanners] = useState([

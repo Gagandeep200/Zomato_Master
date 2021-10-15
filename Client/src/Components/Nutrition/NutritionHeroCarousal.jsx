@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 
 // components
-import NutritionCarousalCard from "./NutritionHeroCarousalCard";
+import NutritionHeroCarousalCard from "./NutritionHeroCarousalCard";
 import { NextArrow, PrevArrow } from "../CarousalArrow";
 const NutritionCarousal = () => {
   const [heroBanners, setHeroBanners] = useState([
@@ -25,7 +25,7 @@ const NutritionCarousal = () => {
   return (
     <Slider {...settings}>
       {heroBanners.map((image) => (
-        <NutritionCarousalCard image={image} />
+        <NutritionHeroCarousalCard image={image} />
       ))}
     </Slider>
   );

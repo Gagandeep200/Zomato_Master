@@ -1,8 +1,7 @@
 import React from "react";
 
 // components
-import NutritionHeroCarousal from "./NutritionHeroCarousal";
-import NutritionCarousal from "./NutritionHeroCarousal";
+import NutritionCarousal from "./NutritionCarousel";
 import NutritionCard from "./NutritionCard";
 
 const Nutrition = () => {

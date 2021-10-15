@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 // components
-import NutritionCarousalCard from "./NutritionCarousalCard";
+import NutritionCarousalCard from "./NutritionCarouselCard";
 import { NextArrow, PrevArrow } from "../CarousalArrow";
 const NutritionCarousal = () => {
     const categories = [
@@ -64,4 +64,4 @@ const NutritionCarousal = () => {
     );
   };
   
-  export default NutritionCarousal;
+  export default NutritionCarousal

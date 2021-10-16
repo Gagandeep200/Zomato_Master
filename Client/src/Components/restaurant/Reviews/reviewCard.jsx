@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { TiStarFullOutline } from "react-icons/ti";
+import { useDispatch } from "react-redux";
+import dayjs from "dayjs";
+import { getUser } from "../../../Redux/Reducer/User/user.action";
 
-const ReviewCard = () => {
+const ReviewCard = (props) => {
+  const [user, setUser] = useState({});
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getUser(props.user)).then((data) =>
+      // setUser(data.payload.user.user.user)
+      console.log(data)
+    );
+  }, []);
+
+
   return (
     <>
       <div className="my-3 flex flex-col gap-3">
@@ -15,7 +29,7 @@ const ReviewCard = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-lg font-semibold">Don</h3>
+            <h3 className="text-lg font-semibold">{user?.fullname}</h3>>
               <small className="text-gray-500">
                 5 Reviews &#8226; 3 Followers
               </small>
@@ -30,16 +44,16 @@ const ReviewCard = () => {
             <span className="text-white text-xs bg-green-700 px-2 py-1 rounded-lg flex items-center gap-1">
               3 <TiStarFullOutline />
             </span>
-            <h5 className="font-regular uppercase">Delivery</h5>
-            <small className="text-gray-500">2 days ago</small>
+            <h5 className="font-regular uppercase">
+              {props.isRestaurantReview ? "Dining" : "Delivery"}
+            </h5>
+            <small className="text-gray-500">
+              {dayjs(props.createdAt).format("DD MMM YYYY")}
+            </small>
           </div>
           <div className="w-full">
             <p className="w-full text-gray-600 font-light text-base">
-            Great food, very good quantity and courteous staff.
-            Cheese Chindi potato pops, Worli sandwich and Marine sandwich were amazing! 
-            Tava Pulav was toooooooo goood! A must-visit place and perfect value for money. 
-            Though Ambience is average, the quality and quantity of food is something I liked the most.
-            Will surely visit again!
+            {props.reviewText}
             </p>
           </div>
         </div>

@@ -2,7 +2,6 @@ import React from "react";
 import { AiOutlineCompass } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 // components
-import FoodItem from "../../Components/restaurant/Order-Online/FoodItem";
 import FloatMenuBtn from "../../Components/restaurant/Order-Online/FloatMenuBtn";
 import MenuListContainer from "../../Components/restaurant/Order-Online/MenuListContainer";
 import FoodList from "../../Components/restaurant/Order-Online/Foodlist";
@@ -36,20 +35,6 @@ const OrderOnline = () => {
                 },
               ]}
             />
-            <FoodList
-              title="Pizza"
-              items={[
-                {
-                  price: "1000",
-                  rating: 3,
-                  description:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta repellendus sit cumque eum odio animi doloribus quo voluptatem aut ipsam, consectetur non minima rerum eligendi magnam aspernatur culpa provident?",
-                  title: "Yummy food",
-                  image:
-                    "https://b.zmtcdn.com/data/dish_photos/839/62575c08ce26635e3f48b3642805d839.jpg?output-format=webp",
-                },
-              ]}
-              />
         </section>
         </div>
       </div>

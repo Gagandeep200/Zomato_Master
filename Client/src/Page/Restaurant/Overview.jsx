@@ -75,8 +75,7 @@ const Overview = () => {
               menuTitle="Menu"
               pages="3"
               image={[
-                "https://b.zmtcdn.com/data/menus/920/19438920/21fa39744f465abc5f947f1e9319fb5d.jpg",
-                "https://images.unsplash.com/photo-1526382551041-3c817fc3d478?dpr=2&auto=format&w=1024&h=1024",
+                "https://b.zmtcdn.com/data/menus/920/19438920/21fa39744f465abc5f947f1e9319fb5d.jpg",,
               ]}
             />
           </div>
@@ -86,10 +85,10 @@ const Overview = () => {
               Street Food
             </span>
             <span className="border border-gray-600 text-blue-600 px-2 py-1 rounded-full">
-              Street Food
+              Chinese
             </span>
             <span className="border border-gray-600 text-blue-600 px-2 py-1 rounded-full">
-              Street Food
+            Lebanese
             </span>
           </div>
           <div className="my-4">
@@ -141,8 +140,8 @@ const Overview = () => {
             <Mapview
               title="Mumbai Xpress"
               phno="+911212121212"
-              mapLocation={[12.988134202889283, 77.59405893120281]}
-              address="15, Sigma Central Mall, Vasanth Nagar, Cunningham Road, Bangalore"
+              mapLocation={[28.5734, 77.2326]}
+              address=" Shop No. 009 MCD Booth adjoining Mother Diary Main Market, Block C, Defence Colony, New Delhi, Delhi 110024"
             />
           </div>
 
@@ -159,8 +158,8 @@ const Overview = () => {
            <Mapview
             title="Mumbai Xpress"
             phno="+911212121212"
-            mapLocation={[12.988134202889283, 77.59405893120281]}
-            address="15, Sigma Central Mall, Vasanth Nagar, Cunningham Road, Bangalore"
+            mapLocation={[28.5734, 77.2326]}
+            address=" Shop No. 009 MCD Booth adjoining Mother Diary Main Market, Block C, Defence Colony, New Delhi, Delhi 110024"
           />
         </aside>
       </div>
